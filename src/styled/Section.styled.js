@@ -36,7 +36,7 @@ export const StyledSection = styled.section`
 
   .card {
     position: relative;
-    min-height: 650px;
+    min-height: 675px;
     border: 10px solid var(--accent-color);
     margin: 40px 30px;
     box-shadow: 3px 3px 0 #fff, 4px 4px 0 #fff, 5px 5px 0 #fff,
@@ -124,7 +124,8 @@ export const StyledSection = styled.section`
     .images {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      gap: 30px;
+      height: 500px;
       overflow: hidden;
     }
   }
