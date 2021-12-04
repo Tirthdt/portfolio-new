@@ -83,18 +83,23 @@ const Skills = () => {
             </p>
           </article>
         </Slide>
-        <div className="images">
-          <Fade cascade duration={300}>
+        <Fade cascade duration={300}>
+          <div className="images">
             {skillsArray.map((skill) => {
               return (
-                <Skill key={skill.name} bg={skill.bg} text="#fff">
+                <Skill
+                  className={"skill " + skill.name}
+                  key={skill.name}
+                  bg={skill.bg}
+                  text="#fff"
+                >
                   <img src={skill.src} alt={skill.alt} />
                   <span className="title">{skill.name}</span>
                 </Skill>
               );
             })}
-          </Fade>
-        </div>
+          </div>
+        </Fade>
       </div>
     </StyledSection>
   );

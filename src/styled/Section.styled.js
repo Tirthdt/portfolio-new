@@ -178,15 +178,63 @@ export const StyledSection = styled.section`
       }
 
       .images {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: unset;
+        grid-template-areas:
+          "first second"
+          "third forth"
+          "fifth fifth"
+          "sixth seventh"
+          "eight ningth";
         gap: 20px;
         height: auto;
-        width: 70%;
+        width: 90%;
         margin: 20px auto;
 
-        div {
+        & > div {
           margin: 30px auto;
+        }
+
+        div.skill {
           box-shadow: 4px 4px 0 #fff;
+          &.HTML {
+            grid-area: first;
+          }
+
+          &.CSS {
+            grid-area: second;
+          }
+
+          &.JS {
+            grid-area: third;
+          }
+
+          &.NodeJS {
+            grid-area: forth;
+          }
+
+          &.Angular {
+            grid-area: fifth;
+            margin: 0 auto;
+          }
+
+          &.React {
+            grid-area: sixth;
+          }
+
+          &.Firebase {
+            grid-area: seventh;
+          }
+
+          &.SCSS {
+            grid-area: eight;
+          }
+
+          &.Python {
+            grid-area: ningth;
+          }
+
+          img {
+          }
 
           & .title {
             box-shadow: 4px 4px 0 #fff;
