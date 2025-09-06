@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Shopify",
       imgPath: "/assets/Shopify.png",
       description: "An e-commerce app create using MERN stack.",
-      url: "https://shopifymernapp.herokuapp.com/",
+      url: "http://ec2-13-235-103-4.ap-south-1.compute.amazonaws.com/",
       repo: "https://github.com/Tirthdt/MERN-Shop",
     },
     {
